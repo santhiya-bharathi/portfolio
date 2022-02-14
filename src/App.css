@@ -219,6 +219,9 @@ border-radius: 30rem;
   display: flex;
   gap: 30px;
 }
+.project-mobile-div{
+  margin-left: 300px;
+}
 .project-name{
   color: #4dc9b2;
   font-family: 'Open Sans', sans-serif;
@@ -292,5 +295,14 @@ margin-top: 6px;
     gap: 10px;
     margin-bottom: 20px;
   }
+
+.project-mobile-div{
+  margin-left: 10px;
+}
+.container{
+  height: 460px;
+  width: 330px;
+ 
+}
 
 }

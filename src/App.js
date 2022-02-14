@@ -152,7 +152,7 @@ function Project(){
     <div className='skills-dev'>
      <h1 className='contact-me'>Projects</h1>
 
-     <div className='email-mobile-div'>
+     <div className='project-mobile-div'>
        <div className='container'>
      <p className='project-name'>Project Name</p>
      <p className='about-div'>Project brief explanation Project brief explanation Project brief explanationProject brief explanation Project brief explanation</p>
