@@ -167,6 +167,65 @@ margin-left: 300px;
 .resume-link{
   color: rgb(218, 101, 124);
 }
+.skills-dev{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.5px;
+}
+.img-div{
+  margin-left: 300px;
+  display: flex;
+  flex-wrap: wrap;
+    flex-direction: row;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.img-size{
+height: 250px;
+width: 250px;
+object-fit: cover;
+border-radius: 30rem;
+}
+
+.container{
+  height: 400px;
+  width: 400px;
+  padding-left: 20px;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(25px);
+  transition: all 0.3s;
+}
+.container:hover{
+  transform: scale(1.05);
+}
+.logo-link-img{
+  margin-top: 15px;
+  height: 85px;
+  width: 85px;
+  object-fit: cover;
+  border-radius: 3rem;
+  transition: all 0.3s;
+}
+.logo-link-img:hover{
+  transform: scale(1.1);
+}
+.logo-img-div{
+  display: flex;
+  gap: 30px;
+}
+.project-name{
+  color: #4dc9b2;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+
+}
 
 @media(max-width:500px){
   .app-bar-portfolio {
@@ -224,4 +283,14 @@ margin-top: 6px;
 .email-mobile-div{
   margin-left: 50px;
   }
+
+  .img-div{
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+      flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
 }
