@@ -1,10 +1,11 @@
 .App {
   /* text-align: center; */
-  background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("https://www.innovwebsolutions.com/wp-content/themes/twentyseventeen/assets/images/mid3.jpg");
+  background-image: linear-gradient(rgba(128, 125, 125, 0.3),transparent),url("https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
+/* https://www.innovwebsolutions.com/wp-content/themes/twentyseventeen/assets/images/mid3.jpg */
 
 .app-bar-portfolio{
 display: flex;
@@ -27,7 +28,7 @@ flex-direction: row;
 }
 
 .portfolio{
-  color: rgb(206, 75, 101);
+  color: rgb(226, 78, 108);
   padding-left: 20px;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
@@ -181,29 +182,16 @@ margin-left: 300px;
 }
 
 .img-size{
-height: 250px;
-width: 250px;
+height: 120px;
+width: 120px;
 object-fit: cover;
 border-radius: 30rem;
 }
+.skills-data{
+  color: white;
+  font-size: 25px;
+}
 
-.container{
-  height: 400px;
-  width: 400px;
-  padding-left: 20px;
-  display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  backdrop-filter: blur(25px);
-  transition: all 0.3s;
-}
-.container:hover{
-  transform: scale(1.05);
-}
 .logo-link-img{
   margin-top: 15px;
   height: 85px;
@@ -219,15 +207,47 @@ border-radius: 30rem;
   display: flex;
   gap: 30px;
 }
-.project-mobile-div{
-  margin-left: 300px;
+
+.project-grid{
+  display: inline-grid;
+  margin: 20px;
+}
+
+.project-grid-margin{
+  margin-left: 250px;
+}
+
+.container{
+  height: 400px;
+  width: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(55px);
+  transition: all 0.3s;
+}
+.container:hover{
+  transform: scale(1.05);
 }
 .project-name{
-  color: #4dc9b2;
+  color:rgb(233, 116, 140);
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1.5px;
   font-size: 20px;
 
+}
+.git-name-color{
+  color: #45e9cc;
+}
+.flex-git{
+  display: flex;
+  gap: 10px;
 }
 
 @media(max-width:500px){
@@ -286,7 +306,20 @@ margin-top: 6px;
 .email-mobile-div{
   margin-left: 50px;
   }
-
+  .project-grid-margin{
+    margin-left: 5px;
+  
+  }
+  .project-grid{
+    margin: 2px;
+  }
+  .container{
+    height: 450px;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
   .img-div{
     margin-left: 50px;
     display: flex;
