@@ -7,32 +7,27 @@ import LinkIcon from '@mui/icons-material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import {useState} from "react";
 
+
 function App() {
   const history = useHistory();
   const project_details = [{projectname:"Recipe Blog App",
  details:"here you can explore more recipes and can add recipes if you want to add  and you can delete and edit the recipes",
-  frontend:"https://github.com/santhiya-bharathi/blog-app",
-   backend:"https://github.com/santhiya-bharathi/blog-node",
+  frontend:"https://github.com/santhiya-bharathi/book-app",
+   backend:"https://github.com/santhiya-bharathi/book-node",
    image:"https://i.pinimg.com/550x/4b/39/36/4b3936f9b378c7c59a58f9b4dbeb932a.jpg",
-    demo:"https://recipe-blog-app.netlify.app/"},
+    demo:"https://bookkeeping-app.netlify.app"},
     {projectname:"Recipe Blog App",
  details:"here you can explore more recipes and can add recipes if you want to add  and you can delete and edit the recipes",
-  frontend:"https://github.com/santhiya-bharathi/blog-app",
-   backend:"https://github.com/santhiya-bharathi/blog-node",
+  frontend:"https://github.com/santhiya-bharathi/job-app",
+   backend:"https://github.com/santhiya-bharathi/job-node",
    image:"https://i.pinimg.com/550x/4b/39/36/4b3936f9b378c7c59a58f9b4dbeb932a.jpg",
-    demo:"https://recipe-blog-app.netlify.app/"},
-    {projectname:"Recipe Blog App",
- details:"here you can explore more recipes and can add recipes if you want to add  and you can delete and edit the recipes",
-  frontend:"https://github.com/santhiya-bharathi/blog-app",
-   backend:"https://github.com/santhiya-bharathi/blog-node",
-   image:"https://i.pinimg.com/550x/4b/39/36/4b3936f9b378c7c59a58f9b4dbeb932a.jpg",
-    demo:"https://recipe-blog-app.netlify.app/"},
-    {projectname:"Recipe Blog App",
- details:"here you can explore more recipes and can add recipes if you want to add  and you can delete and edit the recipes",
-  frontend:"https://github.com/santhiya-bharathi/blog-app",
-   backend:"https://github.com/santhiya-bharathi/blog-node",
-   image:"https://i.pinimg.com/550x/4b/39/36/4b3936f9b378c7c59a58f9b4dbeb932a.jpg",
-    demo:"https://recipe-blog-app.netlify.app/"}
+    demo:"https://jobportalapp.netlify.app"},
+    {projectname:"Movies Blog App",
+ details:"you can explore the movies, Blog Application where the user can read, post, edit or delete blogs.",
+  frontend:"https://github.com/santhiya-bharathi/movie-app",
+   backend:"https://github.com/santhiya-bharathi/movie-node",
+   image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStCpJMoaQKp3H_ZW-Ij585ODwDfTldTHWXxo_E31_70oJcB8qIjUewEc2jbZTGVDx9sKY&usqp=CAU",
+    demo:"https://movies-app-blog.netlify.app"}
    ]
 
              const skills_icon = [
@@ -105,8 +100,6 @@ function App() {
 }
 
 export default App;
-
-
 
 function Home(){
   const history = useHistory();
