@@ -6,40 +6,33 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import {useState} from "react";
+import Slider from '@mui/material/Slider';
+import Box from '@mui/material/Box';
 
-
+  
 function App() {
   const history = useHistory();
-  const project_details = [{projectname:"Recipe Blog App",
- details:"here you can explore more recipes and can add recipes if you want to add  and you can delete and edit the recipes",
+  const project_details = [{projectname:"Book keeping app",
+ details:"A Book keeping application with login and registration with some features such as addbooks, explore books.",
   frontend:"https://github.com/santhiya-bharathi/book-app",
    backend:"https://github.com/santhiya-bharathi/book-node",
-   image:"https://i.pinimg.com/550x/4b/39/36/4b3936f9b378c7c59a58f9b4dbeb932a.jpg",
+   image:"https://5.imimg.com/data5/XR/NA/NW/SELLER-1207518/book-keeping-services-500x500.jpg",
     demo:"https://bookkeeping-app.netlify.app"},
-    {projectname:"Recipe Blog App",
- details:"here you can explore more recipes and can add recipes if you want to add  and you can delete and edit the recipes",
+    {projectname:"Job Portal App",
+ details:"A Complete Job Portal application Where a user can post and apply for a job with login flow.",
   frontend:"https://github.com/santhiya-bharathi/job-app",
    backend:"https://github.com/santhiya-bharathi/job-node",
-   image:"https://i.pinimg.com/550x/4b/39/36/4b3936f9b378c7c59a58f9b4dbeb932a.jpg",
+   image:"https://www.roberthalf.com/sites/default/files/2021-04/shutterstock_412257712-2.jpg",
     demo:"https://jobportalapp.netlify.app"},
     {projectname:"Movies Blog App",
- details:"you can explore the movies, Blog Application where the user can read, post, edit or delete blogs.",
+ details:"Blog Application where the user can post, edit or delete blogs and you can explore the movies",
   frontend:"https://github.com/santhiya-bharathi/movie-app",
    backend:"https://github.com/santhiya-bharathi/movie-node",
    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStCpJMoaQKp3H_ZW-Ij585ODwDfTldTHWXxo_E31_70oJcB8qIjUewEc2jbZTGVDx9sKY&usqp=CAU",
     demo:"https://movies-app-blog.netlify.app"}
    ]
 
-             const skills_icon = [
-              {image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzP12pZI4QhCB39yh-xQxZ8HLCispTv-kWQZOGGNaWe5bZIlWVjkbjmKRDAzFKbSTLMw&usqp=CAU", tag:"HTML"},
-            {image:"https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/042015/css3.png?itok=OlYIVwA0", tag:"CSS"},
-            {image:"https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png", tag:"React"},
-            {image:"https://ih1.redbubble.net/image.1637717834.1604/pp,840x830-pad,1000x1000,f8f8f8.u1.jpg", tag:"Node.js"},
-            {image:"https://digital.ai/sites/default/files/pictures/styles/maxwidth_300/public/pt_logos/mongodb.png?itok=pYTrNt-U", tag:"MongoDB"},
-            {image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeY7qx5ZMl-NTPlKljuvJ2u-8YUmXkow5LX_Yl-kB6LVZZQnRKom_oMjCgesca2C5ye0&usqp=CAU", tag:"MySQL"},
-            {image:"https://ih1.redbubble.net/image.1091999270.7282/flat,750x,075,f-pad,750x1000,f8f8f8.jpg", tag:"JavaScript"},
-            {image:"https://pgjones.dev/tozo/frontend/img/material-ui.png", tag:"Material ui"},
-            {image:"https://avatars.githubusercontent.com/u/2918581?s=280&v=4", tag:"Bootstrap"}]
+
 
             const [show,setShow] = useState(false);
             
@@ -82,7 +75,7 @@ function App() {
         </Route>
         
         <Route path="/skills">
-          <Skills skills_icon={skills_icon}/>
+          <Skills />
         </Route>
 
         <Route path="/project">
@@ -141,7 +134,7 @@ function About(){
      <p className='about-details'>Knowledge of Websites HTML, CSS, JavaScript</p>
      <div className='pro-con-button'>
      <div>
-    <a className='button' rel="noreferrer" target="_blank" href='https://drive.google.com/file/d/1fHZDtpkL13S1Qmi0SU3UJuEqlnzslBRS/view?usp=sharing'>Get Resume</a>
+    <a className='button' rel="noreferrer" target="_blank" href='https://drive.google.com/file/d/1LaIZU3X5JQw8V8IYKaJuogtzTWNXNlxa/view?usp=sharing'>Get Resume</a>
     </div>
     </div>
      </div>
@@ -152,27 +145,69 @@ function About(){
 
 
 
-function Skills({skills_icon}){
+function Skills(){
   return(
     <div className='skills-dev'>
-       <div className='img-div'>
-  <div className='img-div-flex'>
-     {skills_icon.map(({image, tag, id})=>(<Skillsimg key={id} image={image} tag={tag}/>))}
-     </div>
-   </div>
+   
+  <Box height={60} width={400}>
+    <div className='div-per'>
+      <p className='skill-text'>HTML</p><p className='skill-text-per'>90%</p></div>
+      <Slider defaultValue={90} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+  
+  <Box height={60} width={400}>
+  <div className='div-per'>
+      <p className='skill-text'>CSS</p><p className='skill-text-per'>90%</p></div>
+      <Slider defaultValue={90} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+    
+  <Box height={60} width={400}>
+  <div className='div-per'>
+      <p className='skill-text'>JavaScript</p><p className='skill-text-per'>90%</p></div>
+      <Slider defaultValue={90} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+    
+  <Box height={60} width={400}>
+  <div className='div-per'>
+      <p className='skill-text'>React</p><p className='skill-text-per'>85%</p></div>
+      <Slider defaultValue={90} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+ 
+  <Box height={60} width={400}>
+  <div className='div-per'>
+      <p className='skill-text'>Node.js</p><p className='skill-text-per'>85%</p></div>
+      <Slider defaultValue={75} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+   
+  <Box height={60} width={400}>
+  <div className='div-per'>
+      <p className='skill-text'>MongoDB</p><p className='skill-text-per'>85%</p></div>
+      <Slider defaultValue={75} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+
+    <Box height={60} width={400}>
+    <div className='div-per'>
+      <p className='skill-text'>MySQL</p><p className='skill-text-per'>80%</p></div>
+      <Slider defaultValue={75} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+
+    <Box height={60} width={400}>
+    <div className='div-per'>
+      <p className='skill-text'>Bootstrap</p><p className='skill-text-per'>80%</p></div>
+      <Slider defaultValue={75} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+
+    <Box height={60} width={400}>
+    <div className='div-per'>
+      <p className='skill-text'>Material UI</p><p className='skill-text-per'>80%</p></div>
+      <Slider defaultValue={80} aria-label="Default" valueLabelDisplay="auto" disabled/>
+    </Box>
+  
     </div>
   );
 }
 
-function Skillsimg({image, tag}){
-return(
- 
-    <div>
-   <img  className='img-size' src={image} alt={tag} />
-   </div>
-);
 
-}
 
 function Project({project_details}){
   return(
@@ -271,3 +306,15 @@ function Contact(){
   
   );
 }
+
+
+// const skills_icon = [
+//   {image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzP12pZI4QhCB39yh-xQxZ8HLCispTv-kWQZOGGNaWe5bZIlWVjkbjmKRDAzFKbSTLMw&usqp=CAU", tag:"HTML"},
+// {image:"https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/042015/css3.png?itok=OlYIVwA0", tag:"CSS"},
+// {image:"https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png", tag:"React"},
+// {image:"https://ih1.redbubble.net/image.1637717834.1604/pp,840x830-pad,1000x1000,f8f8f8.u1.jpg", tag:"Node.js"},
+// {image:"https://digital.ai/sites/default/files/pictures/styles/maxwidth_300/public/pt_logos/mongodb.png?itok=pYTrNt-U", tag:"MongoDB"},
+// {image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeY7qx5ZMl-NTPlKljuvJ2u-8YUmXkow5LX_Yl-kB6LVZZQnRKom_oMjCgesca2C5ye0&usqp=CAU", tag:"MySQL"},
+// {image:"https://ih1.redbubble.net/image.1091999270.7282/flat,750x,075,f-pad,750x1000,f8f8f8.jpg", tag:"JavaScript"},
+// {image:"https://pgjones.dev/tozo/frontend/img/material-ui.png", tag:"Material ui"},
+// {image:"https://avatars.githubusercontent.com/u/2918581?s=280&v=4", tag:"Bootstrap"}]
