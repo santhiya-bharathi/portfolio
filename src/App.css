@@ -3,6 +3,9 @@
 
 } */
 
+body{
+  animation: transitionIn 0.75s;
+}
 
 .app-bar-portfolio{
   background-color: black;
@@ -70,12 +73,9 @@ flex-direction: row;
 
 
 .home{
-   /* background-image: linear-gradient(rgba(128, 125, 125, 0.3),transparent),url("https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg");
-   background-repeat: no-repeat;
-   background-size: cover; */
-   min-height: 100vh;
+   min-height: 91.1vh;
    background-color: rgb(18, 18, 46);
-
+width: 100%;
    display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -94,13 +94,15 @@ flex-direction: row;
   flex-direction: column;
 }
 
+.home-img-div{
+  display: flex;
+}
 
 .home-img{
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
   border-radius: 0.5rem;
   object-fit: cover;
-
 }
 
 .hello-home{
@@ -180,7 +182,7 @@ margin: 0;
    background-repeat: no-repeat;
    background-size: cover; */
   background-color: rgb(14, 13, 13);
-  min-height: 100vh;
+  min-height: 84.8vh;
   color: white;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
@@ -201,7 +203,7 @@ margin: 0;
 
 .skills-dev{
   background-color: rgb(14, 13, 13);
-  min-height: 100vh;
+  min-height: 87.9vh;
 display: flex;
 flex-wrap: wrap;
 align-content: flex-start;
@@ -209,7 +211,6 @@ justify-content: flex-start;
 padding-top: 30px;
 padding-left: 400px;
 padding-right: 400px;
-padding-bottom: 500px;
 gap: 50px;
 }
 .skill-text{
@@ -276,7 +277,7 @@ backdrop-filter: blur(55px); */
 
 .project-div{
   background-color: rgb(3, 3, 3);
-  min-height: 100vh;
+  min-height: 80.7vh;
   color: white;
  padding: 50px;
 }
@@ -295,32 +296,57 @@ backdrop-filter: blur(55px); */
       justify-items: center;
   margin: 15px;
   cursor: pointer;
+  border: rgba(128, 128, 128, 0.356) solid 3px;
 }
 
 .full-det{
   overflow: hidden;
   width: 450px;
-  border: gray solid 3px;
   height: min-content;
+  position: relative;
 }
 
 .details{
+  position: absolute;
+  top: 0px;
+  left: 0px;
   display: flex;
   flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.details:hover{
+  opacity: 1;
+}
+
+.details > *{
+transform: translateY(20px);
+transition: transform 0.25s;
+}
+
+.details:hover > *{
+  transform: translateY(0);
+}
+
+.details--blur{
+backdrop-filter: blur(16px);
 }
 
 .user-pic{
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   width: 450px;
-  transition: all 0.8s;
+  display: block;
 }
-.user-pic:hover{
-transform: scale(1.1);
-}
+
 .div-button{
   margin: 10px;
   display: flex;
@@ -333,6 +359,7 @@ transform: scale(1.1);
 
 .project-name{
   margin: 0;
+  padding: 5px;
   text-align: center;
 }
 .details-text{
@@ -340,7 +367,7 @@ transform: scale(1.1);
   letter-spacing: 1.5px;
 }
 .button-link{
-background-color: #3ca16f;
+background-color: #2c865f;
 height: 45px;
 width: 180px;
 border-radius: 5px;
@@ -360,7 +387,7 @@ gap: 10px;
 
 .contact{
   background-color: black;
-  min-height: 100vh;
+  min-height: 84.8vh;
   color: white;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
@@ -388,7 +415,15 @@ gap: 10px;
  display: flex;
  align-items: center;
  gap: 15px;
+ padding: 5px;
 }
+
+.contact-div:hover{
+background: rgba(255, 255, 255, 0.096);
+border-radius: 10px;
+backdrop-filter: blur(55px);
+}
+
 
 .gmail-img{
   height: 80px;
@@ -407,10 +442,14 @@ gap: 10px;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1.5px;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .github-link{
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 18px;
 }
 
 .menu-icon{
@@ -449,7 +488,7 @@ gap: 10px;
     padding-top: 60px;
     padding-left: 45px;
     padding-right: 15px;
-   
+    min-height: 100vh;
   }
   .about-details{
     line-height: 30px;
@@ -460,7 +499,16 @@ gap: 10px;
   .skills-dev{
     padding-left: 120px;
     padding-right: 120px;
+    min-height: 100vh;
     }
+    .home{
+      min-height: 100vh;
+      background-color: rgb(18, 18, 46);
+      
+   }
+   .project-div {
+    min-height: 100vh;  
+}
 
 }
 
@@ -538,13 +586,17 @@ margin-top: 6px;
 .button{
   margin: 0;
 }
-
-
- 
 .skills-dev{
+  padding-top: 10px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 600px;
+  height: 100vh;
   }
+
+  .project-div {
+    min-height: 100vh;  
+}
 
     .contact{
       padding: 25px;
@@ -576,4 +628,15 @@ margin-top: 6px;
       height: min-content;
     }
     
+}
+
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: rotateX(-20deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }

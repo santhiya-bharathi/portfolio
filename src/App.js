@@ -9,26 +9,34 @@ import {useState} from "react";
 import Slider from '@mui/material/Slider';
 import Box from '@mui/material/Box';
 
-  
+
+
+
 function App() {
   const history = useHistory();
   const project_details = [{projectname:"Book keeping app",
  details:"A Book keeping application with login and registration with some features such as addbooks, explore books.",
   frontend:"https://github.com/santhiya-bharathi/book-app",
    backend:"https://github.com/santhiya-bharathi/book-node",
-   image:"https://5.imimg.com/data5/XR/NA/NW/SELLER-1207518/book-keeping-services-500x500.jpg",
-    demo:"https://bookkeeping-app.netlify.app"},
-    {projectname:"Job Portal App",
- details:"A Complete Job Portal application Where a user can post and apply for a job with login flow.",
-  frontend:"https://github.com/santhiya-bharathi/job-app",
-   backend:"https://github.com/santhiya-bharathi/job-node",
-   image:"https://www.roberthalf.com/sites/default/files/2021-04/shutterstock_412257712-2.jpg",
-    demo:"https://jobportalapp.netlify.app"},
+   image:"https://uusaratoga.org/wp-content/uploads/2020/05/Books.jpg",
+    demo:"https://bookkeeping-app.netlify.app"},  
     {projectname:"Movies Blog App",
  details:"Blog Application where the user can post, edit or delete blogs and you can explore the movies",
   frontend:"https://github.com/santhiya-bharathi/movie-app",
    backend:"https://github.com/santhiya-bharathi/movie-node",
-   image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStCpJMoaQKp3H_ZW-Ij585ODwDfTldTHWXxo_E31_70oJcB8qIjUewEc2jbZTGVDx9sKY&usqp=CAU",
+   image:"https://gooyaabitemplates.com/download/Movies-On-Blogger-Template.jpg",
+    demo:"https://movies-app-blog.netlify.app"},
+    {projectname:"Job Portal App",
+ details:"A Complete Job Portal application Where a user can post and apply for a job with login flow.",
+  frontend:"https://github.com/santhiya-bharathi/job-app",
+   backend:"https://github.com/santhiya-bharathi/job-node",
+   image:"https://c.ndtvimg.com/2019-02/tdbvhiug_student-using-computer_625x300_25_February_19.jpg",
+    demo:"https://jobportalapp.netlify.app"},
+    {projectname:"Recipes Blog App",
+ details:"Blog Application where the user can post, edit or delete blogs and you can explore the movies",
+  frontend:"https://github.com/santhiya-bharathi/movie-app",
+   backend:"https://github.com/santhiya-bharathi/movie-node",
+   image:"https://studybreaks.com/wp-content/uploads/2018/02/Food-Blog.jpg",
     demo:"https://movies-app-blog.netlify.app"}
    ]
 
@@ -111,12 +119,13 @@ function Home(){
     </div>
     </div>
 
-      <div>
+      <div className='home-img-div'>
     <img className='home-img' src='https://static.vecteezy.com/system/resources/previews/002/127/337/original/isometric-laptop-analysis-information-futuristic-concept-vector.jpg'  alt='img'/>
   </div>
   
     </div>
     </div>
+   
   );
 }
 
@@ -229,30 +238,47 @@ function Project({project_details}){
 
 function ProjectDetails({projectname,details,frontend,backend,demo,image}){
 
+
   return(
     
 <div className='container'>
+<h2 className='project-name'>{projectname}</h2>
+<br />
   <div className="full-det">
- 
+
    <img className="user-pic" src={image} alt='website'/>
- <div className='details'>
-  <h2 className='project-name'>{projectname}</h2>
+  
+
+ <div className='details details--blur'>
+ 
+            
   <p className='details-text'>{details}</p>
 
   <div className='div-button'>
+
+  <a className='frontend-link' target="_blank" rel="noreferrer" href={frontend}>
     <div className='button-link'>
       <GitHubIcon />
      <a className='frontend-link' target="_blank" rel="noreferrer" href={frontend}>Frontend</a>
     </div>
+    </a>
+
+    <a className='frontend-link' target="_blank" rel="noreferrer" href={backend}>
     <div className='button-link'>
     <GitHubIcon />
     <a className='frontend-link' target="_blank" rel="noreferrer" href={backend}>Backend</a>
     </div>
+    </a>
+
+    <a className='frontend-link' target="_blank" rel="noreferrer" href={demo}>
     <div className='button-link'>
       <LinkIcon />
     <a className='frontend-link' target="_blank" rel="noreferrer" href={demo}>Demolink</a>
     </div>
+    </a>
+
     </div>
+    
   </div>
   </div>
 </div>
@@ -267,15 +293,18 @@ function Contact(){
     <div className='contact'>
       <div className='contact-flex'>
     <h2>Mail me for any other Further queries</h2>
+    
+    <a className='contact-name github-link' rel="noreferrer" target="_blank" href='https://mail.google.com'>
 <div className='contact-div'>
 <div >
 <img className='gmail-img' src='https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png'  alt='gmail' />
 </div>
 <div>
 <p className='contact-name'>Email</p>
-<p className='contact-name'>santhiyabharathi1999@gmail.com</p>
+<a className='contact-name github-link' rel="noreferrer" target="_blank" href='santhiyabharathi1999@gmail.com'>santhiyabharathi1999@gmail.com</a>
 </div>
 </div>
+</a>
 
 <div className='contact-div'>
 <div >
@@ -288,6 +317,8 @@ function Contact(){
 </div>
 
 <h2>see all other my works on GitHub</h2>
+
+<a className='contact-name github-link' rel="noreferrer" target="_blank" href='https://github.com/santhiya-bharathi'>
 <div className='contact-div'>
 <div >
 <img className='contact-img' src='https://www.kindpng.com/picc/m/255-2558173_github-logo-png-transparent-png.png'  alt='github' />
@@ -295,11 +326,11 @@ function Contact(){
 <div>
 <p className='contact-name'>GitHub</p>
 <div>
-<a className='contact-name github-link' rel="noreferrer" target="_blank" href='https://github.com/santhiya-bharathi'>https://github.com/santhiya-bharathi</a>
+<a className='github-link' rel="noreferrer" target="_blank" href='https://github.com/santhiya-bharathi'>https://github.com/santhiya-bharathi</a>
 </div>
 </div>
 </div>
-      
+</a>
 
       </div>
     </div>
