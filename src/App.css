@@ -73,7 +73,7 @@ flex-direction: row;
 
 
 .home{
-   min-height: 91.1vh;
+   min-height: 91vh;
    background-color: rgb(18, 18, 46);
 width: 100%;
    display: flex;
@@ -241,7 +241,7 @@ animation: typing 3s steps(10);
    background-repeat: no-repeat;
    background-size: cover; */
   background-color: rgb(14, 13, 13);
-  min-height: 84.8vh;
+  min-height: 84.2vh;
   color: white;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
@@ -262,7 +262,7 @@ animation: typing 3s steps(10);
 
 .skills-dev{
   background-color: rgb(14, 13, 13);
-  min-height: 87.9vh;
+  min-height: 87.5vh;
 display: flex;
 flex-wrap: wrap;
 align-content: flex-start;
@@ -446,7 +446,7 @@ gap: 10px;
 
 .contact{
   background-color: black;
-  min-height: 84.8vh;
+  min-height: 84vh;
   color: white;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
