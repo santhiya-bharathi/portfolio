@@ -11,32 +11,35 @@ import Box from '@mui/material/Box';
 
 
 
-
 function App() {
   const history = useHistory();
   const project_details = [{projectname:"Book keeping app",
- details:"A Book keeping application with login and registration with some features such as addbooks, explore books.",
+ details:"A Book keeping application with some features such as posting books, explore books.",
   frontend:"https://github.com/santhiya-bharathi/book-app",
    backend:"https://github.com/santhiya-bharathi/book-node",
    image:"https://uusaratoga.org/wp-content/uploads/2020/05/Books.jpg",
+   tech:"React, node.js, mongoD, Material UI",
     demo:"https://bookkeeping-app.netlify.app"},  
+    {projectname:"Job Portal App",
+ details:"A Job Portal application Where a user can apply for a job and can search and find the dream job.",
+  frontend:"https://github.com/santhiya-bharathi/job-app",
+   backend:"https://github.com/santhiya-bharathi/job-node",
+   image:"https://images.unsplash.com/photo-1544006659-f0b21884ce1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwbGFwdG9wfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+   tech:"React, node.js, Express.js, mongoDB, Material UI",
+    demo:"https://jobportalapp.netlify.app"},
     {projectname:"Movies Blog App",
  details:"Blog Application where the user can post, edit or delete blogs and you can explore the movies",
   frontend:"https://github.com/santhiya-bharathi/movie-app",
    backend:"https://github.com/santhiya-bharathi/movie-node",
    image:"https://gooyaabitemplates.com/download/Movies-On-Blogger-Template.jpg",
+   tech:"React, node.js, mongoDB, JavaScript, Material UI",
     demo:"https://movies-app-blog.netlify.app"},
-    {projectname:"Job Portal App",
- details:"A Complete Job Portal application Where a user can post and apply for a job with login flow.",
-  frontend:"https://github.com/santhiya-bharathi/job-app",
-   backend:"https://github.com/santhiya-bharathi/job-node",
-   image:"https://c.ndtvimg.com/2019-02/tdbvhiug_student-using-computer_625x300_25_February_19.jpg",
-    demo:"https://jobportalapp.netlify.app"},
     {projectname:"Recipes Blog App",
- details:"Blog Application where the user can post, edit or delete blogs and you can explore the movies",
+ details:"Blog Application can explore the recipes and can post the new recipe blogs",
   frontend:"https://github.com/santhiya-bharathi/movie-app",
    backend:"https://github.com/santhiya-bharathi/movie-node",
    image:"https://studybreaks.com/wp-content/uploads/2018/02/Food-Blog.jpg",
+   tech:"React, node.js, mongoDB, Material UI",
     demo:"https://movies-app-blog.netlify.app"}
    ]
 
@@ -112,7 +115,13 @@ function Home(){
 <div className='home-details'>
     <p className='hello-home'>Hello!</p>
     <h1 className='name-home'>I'm Santhiya Bharathi</h1>
-    <p className='dev'>Full Stack Developer</p>
+     <div className='wrapper'>
+     <ul className='dynamic-txts'>
+     <li><span>Full Stack Developer</span></li>
+     <li><span>MERN Stack Developer</span></li>
+     </ul>
+     </div>
+    
     <div className='pro-con-button'>
     <p className='button' onClick={()=>history.push("/project")}>Explore My Project</p>
     <p className='button' onClick={()=>history.push("/contact")}>Connect with Me</p>
@@ -139,8 +148,9 @@ function About(){
      <div>
      <p className='about-name'>Hello, I'M Santhiya Bharathi</p>
      <p className='about-details'>Full Stack Web and mobile Developer with background knowledge of MERN stacks and</p>
-     <p className='about-details'>developed Full-Stack based web application using React Framework, Node.js, MongoDB</p>
-     <p className='about-details'>Knowledge of Websites HTML, CSS, JavaScript</p>
+     <p className='about-details'>I like to read books and I enjoy creating application, I will update myself by learning new technologies</p>
+     <p className='about-details'>I am looking for a respectable and responsible work, that can build my personal and professional growth</p>
+     <p className='about-details'>and helps me to contribute effectively to the company growth.</p>
      <div className='pro-con-button'>
      <div>
     <a className='button' rel="noreferrer" target="_blank" href='https://drive.google.com/file/d/1LaIZU3X5JQw8V8IYKaJuogtzTWNXNlxa/view?usp=sharing'>Get Resume</a>
@@ -223,12 +233,13 @@ function Project({project_details}){
     <div className='project-div'>
     <div className='div-flex'>
    
-    {project_details.map(({projectname,details,frontend,backend,demo,image,id})=>(<ProjectDetails key={id} 
+    {project_details.map(({projectname,details,frontend,backend,demo,image,tech,id})=>(<ProjectDetails key={id} 
     projectname={projectname}
      details={details}
       frontend={frontend}
        backend={backend}
        image={image}
+       tech={tech}
         demo={demo}/>))}
      
     </div>
@@ -236,7 +247,7 @@ function Project({project_details}){
   );
 }
 
-function ProjectDetails({projectname,details,frontend,backend,demo,image}){
+function ProjectDetails({projectname,details,frontend,backend,demo,tech,image}){
 
 
   return(
@@ -250,10 +261,10 @@ function ProjectDetails({projectname,details,frontend,backend,demo,image}){
   
 
  <div className='details details--blur'>
- 
-            
+     
   <p className='details-text'>{details}</p>
 
+  <p className='details-text'>Technologies Used: {tech}</p>
   <div className='div-button'>
 
   <a className='frontend-link' target="_blank" rel="noreferrer" href={frontend}>
