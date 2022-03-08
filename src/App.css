@@ -73,7 +73,7 @@ flex-direction: row;
 
 
 .home{
-   min-height: 91vh;
+   min-height: 90.96vh;
    background-color: rgb(18, 18, 46);
 width: 100%;
    display: flex;
@@ -241,7 +241,7 @@ animation: typing 3s steps(10);
    background-repeat: no-repeat;
    background-size: cover; */
   background-color: rgb(14, 13, 13);
-  min-height: 84.2vh;
+  min-height: 84.25vh;
   color: white;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
@@ -446,7 +446,7 @@ gap: 10px;
 
 .contact{
   background-color: black;
-  min-height: 84vh;
+  min-height: 84.6vh;
   color: white;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
