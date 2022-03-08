@@ -18,7 +18,7 @@ function App() {
   frontend:"https://github.com/santhiya-bharathi/book-app",
    backend:"https://github.com/santhiya-bharathi/book-node",
    image:"https://uusaratoga.org/wp-content/uploads/2020/05/Books.jpg",
-   tech:"React, node.js, mongoD, Material UI",
+   tech:"React, node.js, mongoDB, Material UI",
     demo:"https://bookkeeping-app.netlify.app"},  
     {projectname:"Job Portal App",
  details:"A Job Portal application Where a user can apply for a job and can search and find the dream job.",
@@ -36,11 +36,11 @@ function App() {
     demo:"https://movies-app-blog.netlify.app"},
     {projectname:"Recipes Blog App",
  details:"Blog Application can explore the recipes and can post the new recipe blogs",
-  frontend:"https://github.com/santhiya-bharathi/movie-app",
-   backend:"https://github.com/santhiya-bharathi/movie-node",
+  frontend:"https://github.com/santhiya-bharathi/blog-app",
+   backend:"https://github.com/santhiya-bharathi/blog-recipe-node-app",
    image:"https://studybreaks.com/wp-content/uploads/2018/02/Food-Blog.jpg",
    tech:"React, node.js, mongoDB, Material UI",
-    demo:"https://movies-app-blog.netlify.app"}
+    demo:"https://recipe-blog-app.netlify.app"}
    ]
 
 
@@ -148,12 +148,12 @@ function About(){
      <div>
      <p className='about-name'>Hello, I'M Santhiya Bharathi</p>
      <p className='about-details'>Full Stack Web and mobile Developer with background knowledge of MERN stacks and</p>
-     <p className='about-details'>I like to read books and I enjoy creating application, I will update myself by learning new technologies</p>
+     <p className='about-details'>I like to read books and I enjoy creating applications, I will update myself by learning new technologies</p>
      <p className='about-details'>I am looking for a respectable and responsible work, that can build my personal and professional growth</p>
      <p className='about-details'>and helps me to contribute effectively to the company growth.</p>
      <div className='pro-con-button'>
      <div>
-    <a className='button' rel="noreferrer" target="_blank" href='https://drive.google.com/file/d/1LaIZU3X5JQw8V8IYKaJuogtzTWNXNlxa/view?usp=sharing'>Get Resume</a>
+    <a className='button' rel="noreferrer" target="_blank" href='https://drive.google.com/file/d/12h_35J1UFtPpZBB-vg4NVX2YeUBVLBrm/view?usp=sharing'>Get Resume</a>
     </div>
     </div>
      </div>
@@ -312,7 +312,7 @@ function Contact(){
 </div>
 <div>
 <p className='contact-name'>Email</p>
-<a className='contact-name github-link' rel="noreferrer" target="_blank" href='santhiyabharathi1999@gmail.com'>santhiyabharathi1999@gmail.com</a>
+<a className='contact-name github-link' rel="noreferrer" target="_blank" href='mailto:santhiyabharathi1999@gmail.com'>santhiyabharathi1999@gmail.com</a>
 </div>
 </div>
 </a>
@@ -349,14 +349,3 @@ function Contact(){
   );
 }
 
-
-// const skills_icon = [
-//   {image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzP12pZI4QhCB39yh-xQxZ8HLCispTv-kWQZOGGNaWe5bZIlWVjkbjmKRDAzFKbSTLMw&usqp=CAU", tag:"HTML"},
-// {image:"https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/042015/css3.png?itok=OlYIVwA0", tag:"CSS"},
-// {image:"https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png", tag:"React"},
-// {image:"https://ih1.redbubble.net/image.1637717834.1604/pp,840x830-pad,1000x1000,f8f8f8.u1.jpg", tag:"Node.js"},
-// {image:"https://digital.ai/sites/default/files/pictures/styles/maxwidth_300/public/pt_logos/mongodb.png?itok=pYTrNt-U", tag:"MongoDB"},
-// {image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeY7qx5ZMl-NTPlKljuvJ2u-8YUmXkow5LX_Yl-kB6LVZZQnRKom_oMjCgesca2C5ye0&usqp=CAU", tag:"MySQL"},
-// {image:"https://ih1.redbubble.net/image.1091999270.7282/flat,750x,075,f-pad,750x1000,f8f8f8.jpg", tag:"JavaScript"},
-// {image:"https://pgjones.dev/tozo/frontend/img/material-ui.png", tag:"Material ui"},
-// {image:"https://avatars.githubusercontent.com/u/2918581?s=280&v=4", tag:"Bootstrap"}]
