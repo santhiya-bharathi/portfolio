@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+.about-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  
+  }
+  
+  .contact-me{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    margin-top: 90px;
+  }
+  
+  .about-div{
+    color: white;
+    flex: 0.6;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding-top: 60px;
+  }
+  .about-name{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 90px;
+    font-size: 25px;
+  }
+  .about-details{
+    line-height: 30px;
+    font-size: 23px;
+   
+  }
+
+  .about-skills-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+ 
+
+.skillcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.skillcontainer__text{
+    color: white;
+    flex: 0.6;
+    text-align: left;
+    max-width: 500px;
+    margin-bottom: 200px;
+}
+
+.skillcontainer__text > h2{
+font-size: 30px;
+margin-top: 50px;
+letter-spacing: 2px;
+}
+
+.skillcontainer__slider{
+    width: 500px;
+}
+
+.skillcontainer__slider > .css-eglki6-MuiLinearProgress-root{
+background-color: rgba(110, 109, 109, 0.671);
+}
+
+.skillcontainer__slider1 > span > .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(214, 43, 77);
+}
+.skillcontainer__slider2 > span > .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(214, 43, 77);
+}
+.skillcontainer__slider3 > span > .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(214, 43, 77);
+}
+.skillcontainer__slider4 > span > .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(214, 43, 77);
+}
+.skillcontainer__slider5 > span > .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(214, 43, 77);
+}
+.skillcontainer__slider6 > span > .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(214, 43, 77);
+}
+.skillcontainer__slider7 > span > .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgb(214, 43, 77);
+}
+
+.skillcontainer__skillset > h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.skill-text{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 23px;
+    padding-top: 30px;
+    margin-bottom: 1px;
+    
+    }
+    .div-per{
+      display: flex;
+      align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .skill-text-per{
+      color: white;
+      font-size: 15px;
+    padding-top: 30px;
+    margin-bottom: 1px;
+    }
+
+    @media(max-width:700px){
+      .aboutcontainer{
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      .about-details {
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .about-name {
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: 1.5px;
+      line-height: 90px;
+      font-size: 16px;
+  }
+    .skillcontainer__slider {
+      width: 300px;
+  }
+      /* .about-skills-flex {
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+      .about-flex {
+       margin: 0px;
+       padding: 20px;
+    } */
+
+    }

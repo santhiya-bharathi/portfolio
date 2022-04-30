@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* .contactcontainer{
+  display: flex;
+    justify-content: space-evenly;
+} */
+
+.contact{
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  padding-top: 40px !important;
+  padding-bottom: 4.6px;
+  justify-content: space-evenly !important;
+  color: white;
+  }
+  
+  
+  .frontend-link{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .contact-flex{
+    /* margin-left: 300px;
+    margin-right: 300px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+  }
+  .contact-div{
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   padding-bottom: 20px !important;
+   padding: 5px;
+   margin: 15px;
+   height: auto;
+   width: 500px;
+  }
+  
+  .contact-div:hover{
+  background: rgba(75, 73, 73, 0.315);
+  border-radius: 10px;
+  backdrop-filter: blur(55px);
+  color: crimson;
+  font-weight: 800;
+  }
+  
+  
+  .gmail-img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+  }
+  
+  .contact-img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 3rem;
+  }
+  
+  .contact-name{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    text-decoration: none;
+    /* margin: 10px; */
+    font-weight: 600;
+  }
+
+ 
+  
+  .github-link{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    /* margin: 10px; */
+  }
+  
+  .menu-icon{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+  }
+  .reach{
+    font-size: 35px;
+    color: rgb(228, 224, 224);
+    display: flex !important;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    padding-top: 90px;
+  }
+.whole-contact-flex{
+  display: flex;
+}
+
+  .icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    color: crimson;
+  }
+
+  .gap-name{
+    padding-left: 53px;
+  }
+
+.flex-contact{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+  .input-field{
+    height: 40px;
+    width: 500px;
+    background-color: rgba(126, 122, 122, 0.336);
+    border: rgb(30, 131, 30) 1px solid;
+    padding-left: 15px;
+  }
+
+  .input-field-area{
+    height: 120px;
+    width: 505px;
+    background-color: rgba(126, 122, 122, 0.336);
+    border: rgb(30, 131, 30) 1px solid;
+    padding-left: 15px;
+  }
+
+  .topcontent__downloadButton{
+    color: rgb(7, 7, 7);
+    background-color: rgb(250, 244, 245);
+    font-size: 14px;
+    padding: 10px 42px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 20px;
+    border: rgb(30, 131, 30) solid 1px;
+}
+
+.topcontent__downloadButton:hover{
+  color: rgb(30, 131, 30);
+  background-color: white;
+  font-weight: 600;
+  }
+
+  
+@media(max-width:700px){
+
+  .contact {
+    padding-left: 160px !important;
+}
+
+.flex-contact {
+  padding-right: 120px !important;
+  padding-left: 0px;
+  padding-bottom: 80px;
+}
+
+.input-field {
+  height: 40px;
+  width: 250px;
+}
+.input-field-area {
+  height: 120px;
+  width: 260px;
+}
+.form-div{
+  margin: 0;
+}
+.github-link {
+  font-size: 14px;
+  letter-spacing: 1.6px;
+}
+}

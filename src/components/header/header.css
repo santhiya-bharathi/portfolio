@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+
+
+
+.header{
+    display : flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header__left{
+    flex: 0.4;
+}
+    
+.header__left > h1{
+   text-align: center;
+   font-family: 'Alata', sans-serif;
+   letter-spacing: 1px;
+   padding: 20px 0px;
+   color: rgb(224, 43, 79);
+   font-size: 40px;
+}
+.menu-icon{
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+}
+.letter-div{
+  display: none !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .letter-div-det{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+.letter{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+  }
+  .letter:active{
+    color: rgb(214, 21, 60);
+  }
+  .letter::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+  }
+  .letter:hover::after{
+    width: 50%;
+  }
+  .letter:hover{
+    color: rgb(236, 39, 78);
+  }
+
+  @media(max-width:700px){
+  .menu-icon{
+    display: block;
+  }
+  .letter-div-det{
+    display: none;
+  }
+  .letter-div{
+    display: block !important;
+      display: flex !important;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+}

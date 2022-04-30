@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+
+.topcontent{
+    color: white;
+    position: relative;
+}
+
+.topcontent__container{
+    position: absolute;
+    top: 300px;
+    right: 150px;
+}
+
+.topcontent__container > p{
+letter-spacing: 1px;
+text-align: left;
+padding-left: 3px;
+padding-top: 20px;
+}
+
+.topcontent__container > a > button{
+margin-top: 30px;
+text-align: left;
+margin-left: 5px;
+border: none;
+border-radius: 2px;
+outline: none;
+}
+
+.topcontent__container > h1{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+
+.topcontent__downloadButton{
+    color: white;
+    background-color: crimson;
+    font-size: 14px;
+    padding: 10px 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 20px;
+    border: rgb(248, 246, 246) solid 1px;
+}
+
+.topcontent__downloadButton:hover{
+color: crimson;
+background-color: white;
+font-weight: 600;
+}
+
+.topcontent__workButton{
+    color: white;
+    border: 1px solid white !important;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 9px 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.topcontent__workButton:hover{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    }
+
+    .home{
+        min-height: 90.72vh;
+       
+     width: 100%;
+        display: flex;
+         flex-wrap: wrap;
+         align-content: space-around;
+         justify-content: center;
+     }
+     
+     .home-flex{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       gap: 50px;
+     }
+     
+     .home-details{
+       display: flex;
+       flex-direction: column;
+     }
+     
+     .home-img-div{
+       display: flex;
+     }
+     
+     .home-img{
+       height: 400px;
+       width: 400px;
+       border-radius: 0.5rem;
+       object-fit: cover;
+     }
+     
+     .hello-home{
+       color: white;
+     font-size: 30px;
+     font-weight: 300;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0;
+     margin-bottom: 5px;
+     }
+     
+     .name-home{
+       color: white;
+       font-size: 60px;
+       line-height: 80px;
+       font-family: 'Open Sans', sans-serif;
+       letter-spacing: 1px;
+       margin: 0;
+     }
+     
+    .type{
+      margin-bottom: 20px;
+      font-size: 21px;
+      color: crimson;
+    }
+
+
+    @media(max-width:700px){
+      .home{
+      padding: 2px !important;
+      }
+      .name-home{
+        color: white;
+        font-size: 30px;
+        line-height: 50px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+      .type{
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: crimson;
+      }
+    }
