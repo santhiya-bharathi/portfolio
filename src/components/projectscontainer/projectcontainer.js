@@ -67,7 +67,7 @@ const ProjectContainer = () => {
       
 
       <div className='container'>
-      <h2 className='project-name'>Stackoverflow</h2>
+      <h2 className='project-name'>Stackoverflow app</h2>
       <br />
         <div className="full-det">
       

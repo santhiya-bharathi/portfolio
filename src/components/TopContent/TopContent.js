@@ -31,7 +31,7 @@ const TopContent = () => {
                         </div>
             
             <div className='pro-con-button'>
-            <a rel="noreferrer" target="_blank" href='https://drive.google.com/file/d/16i0dHCRGJTau-tP4KMwdZTN7nE6SDgNV/view?usp=sharing'>
+            <a rel="noreferrer" target="_blank" href='https://drive.google.com/file/d/1BDBuz1ng8XvMq3U-VrCA3mam0aOhQZgI/view'>
                 <button className='topcontent__downloadButton'>Resume</button>
                 </a>
             <Link to='projects' smooth={true} duration={500}>
